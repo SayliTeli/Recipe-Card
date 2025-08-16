@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pineapple Cake Recipe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>🍍 Pineapple Cake</h1>
+    <img src="PineappleCAKE.jpg" alt="Pineapple Cake" />
+    
+    <div class="info">
+      <span>Prep Time: 30 mins</span>
+      <span>Serves: 6</span>
+    </div>
+
+    <button onclick="toggleSection('ingredients')">Show Ingredients</button>
+    <ul id="ingredients" class="hidden">
+      <li>1 ½ cups all-purpose flour</li>
+      <li>¾ cup sugar</li>
+      <li>½ cup crushed pineapple</li>
+      <li>½ cup yogurt</li>
+      <li>¼ cup oil</li>
+      <li>1 tsp baking powder</li>
+      <li>Whipped cream for topping</li>
+    </ul>
+
+    <button onclick="toggleSection('steps')">Show Steps</button>
+    <ol id="steps" class="hidden">
+      <li>Preheat oven to 180°C.</li>
+      <li>Mix flour, sugar, baking powder.</li>
+      <li>Add pineapple, yogurt, and oil.</li>
+      <li>Pour into pan and bake for 25–30 mins.</li>
+      <li>Cool and top with whipped cream.</li>
+    </ol>
+
+    <button onclick="startCooking()">Start Cooking</button>
+    <div id="progressBar"><div id="progress"></div></div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
+
